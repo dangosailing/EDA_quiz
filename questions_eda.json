@@ -46,5 +46,61 @@
   {
     "question": "När är det mer lämpligt att använda regression istället för bara korrelation?",
     "answer": "När man vill förutsäga ett värde eller undersöka hur en oberoende variabel påverkar en beroende – inte bara om de samvarierar utan hur de gör det."
+  },
+  {
+    "question": "Vad är syftet med Exploratory Data Analysis (EDA)?",
+    "answer": "Att få en första förståelse för datan, upptäcka mönster, uteliggare och relationer innan vidare analys."
+  },
+  {
+    "question": "Vad är UMAP och när används det?",
+    "answer": "UMAP är en dimensionreduktionsmetod som bevarar lokala strukturer – ofta använd för visualisering av högdimensionell data."
+  },
+  {
+    "question": "Vad är skillnaden mellan parametrisk och icke-parametrisk statistik?",
+    "answer": "Parametrisk statistik bygger på antaganden om fördelningar (t.ex. normalfördelning), medan icke-parametrisk inte kräver sådana antaganden."
+  },
+  {
+    "question": "Vilka huvudtyper av data finns det?",
+    "answer": "Kategorisk (nominell, ordinal), numerisk (diskret, kontinuerlig), och ibland text eller tidsseriedata."
+  },
+  {
+    "question": "Hur bör man tänka när man väljer vilket diagram som ska användas?",
+    "answer": "Tänk på datatyp, syftet med analysen och vad du vill kommunicera – t.ex. histogram för fördelningar, scatterplot för samband."
+  },
+  {
+    "question": "Vad är skillnaden mellan normalisering och standardisering?",
+    "answer": "Normalisering skalar värden till [0,1] medan standardisering justerar värden till medel 0 och standardavvikelse 1."
+  },
+  {
+    "question": "Vad används statistiska tester till?",
+    "answer": "För att avgöra om skillnader eller samband i data är statistiskt signifikanta – t.ex. t-test, chi2, ANOVA."
+  },
+  {
+    "question": "Vad är skillnaden mellan PCA och CA?",
+    "answer": "PCA används främst för numerisk data och reducerar dimensioner, medan CA används för kategorisk data i kontingenstabeller."
+  },
+  {
+    "question": "Vad innebär SVD i dataanalys?",
+    "answer": "Singular Value Decomposition delar upp en matris i tre komponenter och används i PCA, rekommendationssystem m.m."
+  },
+  {
+    "question": "Vad är skillnaden mellan varians och standardavvikelse?",
+    "answer": "Varians är medelvärdet av kvadrerade avvikelser, medan standardavvikelse är roten ur variansen – vilket gör den mer tolkbar."
+  },
+  {
+    "question": "Vad är ett p-värde?",
+    "answer": "Det är sannolikheten att få ett resultat lika extremt som det observerade om nollhypotesen är sann."
+  },
+  {
+    "question": "Vad menas med datautvinning?",
+    "answer": "Att hitta mönster, trender och relationer i stora datamängder med hjälp av statistik, AI och maskininlärning."
+  },
+  {
+    "question": "När är det mer lämpligt att använda regression istället för bara korrelation?",
+    "answer": "När man vill förutsäga ett värde eller undersöka hur en oberoende variabel påverkar en beroende – inte bara om de samvarierar utan hur de gör det."
+  },
+  {
+    "question": "Vad innebär datarening?",
+    "answer": "Att förbereda data för analys genom att hantera saknade värden, dubbletter, felaktiga typer och outliers."
   }
 ]
