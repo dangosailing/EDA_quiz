@@ -1,0 +1,50 @@
+[
+  {
+    "question": "Är one-hot encoding en form av datareduktion inom EDA?",
+    "answer": "Nej, one-hot encoding är inte datareduktion – det ökar ofta datadimensionen genom att skapa fler kolumner från kategoriska variabler."
+  },
+  {
+    "question": "Vad innebär dummy coding i samband med one-hot encoding?",
+    "answer": "Dummy coding innebär att man tar bort en kolumn från en one-hot-kodad variabel för att undvika multikollinearitet."
+  },
+  {
+    "question": "Är normalfördelning alltid symmetrisk kring medelvärdet?",
+    "answer": "Ja, normalfördelningen är alltid symmetrisk kring sitt medelvärde."
+  },
+  {
+    "question": "Vad är skillnaden mellan varians och standardavvikelse?",
+    "answer": "Varians mäter genomsnittlig kvadrerad avvikelse från medelvärdet, medan standardavvikelse är kvadratroten av variansen och har samma enhet som datan."
+  },
+  {
+    "question": "Vad är skillnaden mellan regression och korrelation?",
+    "answer": "Korrelation mäter styrka och riktning av ett samband utan orsak-verkan, medan regression modellerar ett orsakssamband och används för prediktion."
+  },
+  {
+    "question": "Vad är syftet med ett t-test?",
+    "answer": "Ett t-test används för att jämföra medelvärden och avgöra om skillnader mellan grupper är statistiskt signifikanta."
+  },
+  {
+    "question": "Vilken typ av t-test används när samma grupp testas före och efter en behandling?",
+    "answer": "Parat t-test (paired samples t-test)."
+  },
+  {
+    "question": "Varför kan one-hot encoding leda till problem i linjära modeller om man inte använder dummy coding?",
+    "answer": "Eftersom alla one-hot-kodade kolumner tillsammans blir linjärt beroende, vilket skapar multikollinearitet och gör att modellen inte kan uppskatta koefficienterna korrekt."
+  },
+  {
+    "question": "Varför föredras standardavvikelse framför varians när man tolkar spridning i praktiken?",
+    "answer": "För att standardavvikelsen har samma enhet som datan och är därmed lättare att tolka direkt i sammanhanget."
+  },
+  {
+    "question": "En fördelning har ett medelvärde på 50 men en tydlig svans åt höger. Är detta en normalfördelning? Motivera kort.",
+    "answer": "Nej, eftersom en normalfördelning är symmetrisk. En svans åt höger tyder på högerskev fördelning."
+  },
+  {
+    "question": "Om korrelationen mellan två variabler är stark, innebär det att den ena orsakar den andra? Förklara kort.",
+    "answer": "Nej, korrelation visar bara att de samvarierar – det innebär inte orsak-verkan eftersom det kan finnas en bakomliggande variabel eller vara en slump."
+  },
+  {
+    "question": "När är det mer lämpligt att använda regression istället för bara korrelation?",
+    "answer": "När man vill förutsäga ett värde eller undersöka hur en oberoende variabel påverkar en beroende – inte bara om de samvarierar utan hur de gör det."
+  }
+]
