@@ -102,5 +102,45 @@
   {
     "question": "Vad innebär datarening?",
     "answer": "Att förbereda data för analys genom att hantera saknade värden, dubbletter, felaktiga typer och outliers."
+  },
+  {
+    "question": "Du har en datamängd där vissa rader saknar värden i flera kolumner. Vad gör du?",
+    "answer": "Jag analyserar mönstret i de saknade värdena, tar bort rader med mycket saknat eller fyller i med rimliga metoder som medelvärde eller imputering."
+  },
+  {
+    "question": "Du ska visualisera sambandet mellan två numeriska variabler. Vilket diagram använder du och varför?",
+    "answer": "Ett scatterplot eftersom det visar hur två numeriska variabler samvarierar och kan avslöja linjära eller icke-linjära samband."
+  },
+  {
+    "question": "Ditt dataset har många kategoriska variabler. Du vill reducera dimensioner för att klustra data. Vad använder du?",
+    "answer": "Korrespondensanalys (CA) eftersom den är anpassad för att analysera samband mellan kategoriska variabler."
+  },
+  {
+    "question": "Du har ett dataset med 200 kolumner. Visualiseringen är svårtolkad. Vad gör du?",
+    "answer": "Jag använder PCA eller UMAP för att reducera dimensionerna och projicera datan i 2D eller 3D för att lättare upptäcka mönster."
+  },
+  {
+    "question": "Du misstänker att ett extremt värde i datan påverkar ditt resultat. Hur går du vidare?",
+    "answer": "Jag undersöker outliers med t.ex. boxplot eller z-score, och testar att köra analys både med och utan dem för att se skillnaden."
+  },
+  {
+    "question": "Du har tränat en modell men misstänker att vissa skalor påverkar resultatet. Vad kontrollerar du?",
+    "answer": "Jag kontrollerar om datan är normaliserad eller standardiserad – särskilt viktigt vid avståndsbaserade algoritmer som KNN eller PCA."
+  },
+  {
+    "question": "En kollega har gjort en analys och fått ett p-värde på 0.03. Vad betyder det?",
+    "answer": "Det betyder att det är 3 % sannolikhet att få detta resultat om nollhypotesen är sann – alltså är resultatet statistiskt signifikant på 5 %-nivån."
+  },
+  {
+    "question": "Du ser att två variabler har hög korrelation. Vad är viktigt att tänka på innan du drar slutsatser?",
+    "answer": "Att korrelation inte innebär orsakssamband – andra variabler kan påverka sambandet eller det kan vara slump."
+  },
+  {
+    "question": "Du arbetar med en kunddatabas där 'kön' anges som 'Male', 'MALE', 'male'. Vad gör du?",
+    "answer": "Jag standardiserar kategorin genom att konvertera till små bokstäver och eventuellt ersätta alla med en enhetlig etikett."
+  },
+  {
+    "question": "Du har ett stort dataset och vill hitta dolda mönster och grupper. Vad gör du först?",
+    "answer": "Jag gör EDA för att förstå datan, sedan ev. datarening, följt av klustring (t.ex. KMeans) efter ev. dimensionreduktion med PCA eller UMAP."
   }
 ]
