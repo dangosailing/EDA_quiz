@@ -31,6 +31,8 @@ while choice != "2":
             selected = questions[select_question]  # Access the dictionary at the selected index
             print(f"Question: {selected['question']}")
             answer = input("Want to see the answer? y/n\n")
+            questions.remove(selected)
+            print(f"Questions left: {len(questions)}")
             if answer.lower() == "y":
                 print(f"Answer: {selected['answer']}")
         else:
