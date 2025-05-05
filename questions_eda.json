@@ -142,5 +142,45 @@
   {
     "question": "Du har ett stort dataset och vill hitta dolda mönster och grupper. Vad gör du först?",
     "answer": "Jag gör EDA för att förstå datan, sedan ev. datarening, följt av klustring (t.ex. KMeans) efter ev. dimensionreduktion med PCA eller UMAP."
+  },
+  {
+    "question": "Vad är multikollinearitet och varför är det ett problem i regression?",
+    "answer": "Multikollinearitet uppstår när två eller fler oberoende variabler är starkt korrelerade, vilket gör det svårt för modellen att uppskatta koefficienterna på ett tillförlitligt sätt."
+  },
+  {
+    "question": "När används Chi2-test?",
+    "answer": "Chi2-test används för att undersöka om det finns ett samband mellan två kategoriska variabler i en kontingenstabell."
+  },
+  {
+    "question": "Vad menas med outliers och hur kan man identifiera dem?",
+    "answer": "Outliers är extremvärden som skiljer sig markant från övriga data. De kan identifieras med boxplots, z-score eller IQR-regeln."
+  },
+  {
+    "question": "Vad är ett konfidensintervall?",
+    "answer": "Ett konfidensintervall är ett intervall som med en viss sannolikhet (t.ex. 95 %) innehåller det sanna värdet för en parameter, som ett medelvärde."
+  },
+  {
+    "question": "Vad är skillnaden mellan överanpassning (overfitting) och underanpassning (underfitting)?",
+    "answer": "Överanpassning sker när en modell lär sig träningen för väl inklusive brus, medan underanpassning innebär att modellen inte fångar mönstren tillräckligt."
+  },
+  {
+    "question": "Vad är syftet med klustring i unsupervised learning?",
+    "answer": "Klustring används för att identifiera grupper eller mönster i data utan fördefinierade etiketter."
+  },
+  {
+    "question": "Vad är silhuettvärdet (silhouette score) i klustring?",
+    "answer": "Det är ett mått på hur väl varje punkt matchar sitt kluster jämfört med andra kluster – högre värde betyder bättre klustring."
+  },
+  {
+    "question": "Vad innebär imputering i datahantering?",
+    "answer": "Imputering innebär att ersätta saknade värden med uppskattade, t.ex. medelvärde, median eller med hjälp av en modell."
+  },
+  {
+    "question": "När används logistisk regression istället för linjär regression?",
+    "answer": "Logistisk regression används när den beroende variabeln är kategorisk, t.ex. för att förutsäga sannolikheter som klass 0 eller 1."
+  },
+  {
+    "question": "Vad är syftet med korsvalidering (cross-validation)?",
+    "answer": "Att utvärdera modellens prestanda på olika delar av datan för att minska risken för överanpassning och få en mer robust modell."
   }
 ]
