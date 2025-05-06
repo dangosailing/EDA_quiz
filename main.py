@@ -23,6 +23,7 @@ choice = 0
 correct = 0 
 asked = 0
 practice_more = []
+user_answers = []
 results = "0/0"
 
 while choice != "2":
@@ -36,6 +37,8 @@ while choice != "2":
             selected = questions[select_question]  # Access the dictionary at the selected index
             print(f"Question: {selected['question']}")
             print("----------------------------------------")
+            user_answer = input("Enter the answer below:\n")
+            print("----------------------------------------")
             answer = input("Want to see the answer? y/n\n")
             print("----------------------------------------")
             if answer.lower() == "y":
@@ -48,7 +51,8 @@ while choice != "2":
                 asked += 1
             else:
                 asked += 1
-                practice_more.append(selected)
+                practice_more.append({"question":selected['question'], "answer":selected['answer'], "user_answer":user_answer})
+                
             results = f"Results: {correct}/{asked}"
             print(results)
             print("----------------------------------------")
@@ -67,6 +71,7 @@ if print_input.lower() == "y":
         f.write(f"Questions answered: {results}\n")
         f.write("## Hard Questions\n")
         for item in practice_more:
-            f.write(f"- Question: {item['question']}\n")
-            f.write(f"  Answer: {item['answer']}\n\n")
+            f.write(f"- **Question**: {item['question']}\n")
+            f.write(f"  **Answer**: {item['answer']}\n")
+            f.write(f"  **Your Answer**: {item['user_answer']}\n\n")
         
