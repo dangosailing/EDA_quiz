@@ -182,5 +182,69 @@
   {
     "question": "Vad är syftet med korsvalidering (cross-validation)?",
     "answer": "Att utvärdera modellens prestanda på olika delar av datan för att minska risken för överanpassning och få en mer robust modell."
+  },
+  {
+    "question": "Vad är syftet med unsupervised learning?",
+    "answer": "Att identifiera mönster, strukturer eller kluster i oetiketterad data utan att ha en förutbestämd målvariabel."
+  },
+  {
+    "question": "Hur fungerar K-means clustering på en grundläggande nivå?",
+    "answer": "Algoritmen placerar ut K klustercentroid och tilldelar varje datapunkt till närmaste centroid, sedan uppdateras centroids baserat på medelvärdet av tilldelade punkter och processen upprepas tills konvergens."
+  },
+  {
+    "question": "Vad är en centroid i K-means algoritmen?",
+    "answer": "En centroid är den geometriska mittpunkten av datapunkterna som tillhör ett visst kluster."
+  },
+  {
+    "question": "Vad innebär 'konvergens' i K-means algoritmen?",
+    "answer": "Konvergens uppnås när datapunkternas klustertillhörigheter inte längre förändras mellan iterationer eller när centroidpositionerna inte uppdateras längre."
+  },
+  {
+    "question": "Vad används en distansmetrik till i klustringsalgoritmer?",
+    "answer": "En distansmetrik används för att mäta likheten mellan datapunkter, exempelvis Euclidean eller Manhattan-avstånd."
+  },
+  {
+    "question": "Vilket problem kan uppstå om man väljer ett olämpligt värde på K i K-means?",
+    "answer": "Det kan leda till dålig klustring där viktiga mönster förbises eller där data överanpassas, vilket försämrar tolkbarheten."
+  },
+  {
+    "question": "Varför är det viktigt att normalisera data innan klustring?",
+    "answer": "Eftersom vissa attribut kan dominera avståndsberäkningen om de har mycket större skala än andra, vilket kan snedvrida klustertilldelningen."
+  },
+  {
+    "question": "Vad är en möjlig metod för att bestämma optimalt antal kluster i K-means?",
+    "answer": "En vanlig metod är elbow-metoden, där man undersöker variationen inom kluster som funktion av K och letar efter en 'armbåge' i kurvan."
+  },
+  {
+    "question": "Vad är en nackdel med K-means-algoritmen vid användning på komplexa dataset?",
+    "answer": "K-means har svårt att identifiera kluster med oregelbunden form eller varierande densitet, eftersom den antar att alla kluster är sfäriska och lika stora."
+  },
+  {
+    "question": "Vad innebär det att K-means är känslig för initiala centroidplaceringar?",
+    "answer": "Olika initialiseringar kan leda till olika slutresultat, eftersom algoritmen kan fastna i lokala minima."
+  },
+  {
+    "question": "Hur kan man minska risken för dåliga resultat i K-means p.g.a. initiala centroidplaceringar?",
+    "answer": "Genom att använda metoder som K-means++ som förbättrar valet av initiala centroidpositioner."
+  },
+  {
+    "question": "Vad är syftet med hierarkisk klustring?",
+    "answer": "Att skapa en trädstruktur (dendrogram) som visar hur datapunkter kan grupperas på olika nivåer av likhet utan att i förväg välja antal kluster."
+  },
+  {
+    "question": "Vad representerar en dendrogram i hierarkisk klustring?",
+    "answer": "Ett trädliknande diagram där varje sammanslagning av kluster visas som en nod, vilket ger en visuell översikt av klustringshierarkin."
+  },
+  {
+    "question": "Vad är skillnaden mellan agglomerativ och divisiv hierarkisk klustring?",
+    "answer": "Agglomerativ börjar med varje datapunkt som eget kluster och slår samman dem, medan divisiv börjar med alla punkter i ett kluster och delar upp dem."
+  },
+  {
+    "question": "Vad är 'linkage' i hierarkisk klustring?",
+    "answer": "En metod för att mäta avståndet mellan kluster, till exempel single linkage (minimalt avstånd), complete linkage (maximalt avstånd), och average linkage (medelavstånd)."
+  },
+  {
+    "question": "Vilken fördel har hierarkisk klustring jämfört med K-means?",
+    "answer": "Hierarkisk klustring kräver inte att man på förhand bestämmer antalet kluster och kan ge mer insikt i datans struktur genom dendrogrammet."
   }
 ]
