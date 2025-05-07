@@ -1,5 +1,5 @@
 import json
-from random import randint
+from random import randint, shuffle
 from datetime import datetime
 
 path = "./questions_eda.json"
@@ -31,6 +31,7 @@ while choice != "2":
     print("----------------------------------------")
     if choice == "1":
         if questions:
+            shuffle(questions)  # Shuffle the questions list to randomize the order
             question_start = 0
             question_end = len(questions) - 1
             select_question = randint(question_start, question_end)
