@@ -1,0 +1,47 @@
+[
+    {
+      "question": "Vad är skillnaden mellan agglomerativ och divisiv hierarkisk klustring?",
+      "answer": "Agglomerativ börjar med varje datapunkt som ett eget kluster och slår ihop dem successivt, medan divisiv börjar med alla datapunkter i ett enda kluster och delar upp dem steg för steg."
+    },
+    {
+      "question": "Vilka är för- och nackdelarna med hierarkisk klustring jämfört med K-means?",
+      "answer": "Fördelar: Kräver inte att antal kluster anges i förväg och ger en hierarkisk struktur via dendrogram. Nackdelar: Skalar dåligt vid stora dataset och är känslig för brus och outliers."
+    },
+    {
+      "question": "Vad är inertia i K-means och vad mäter det?",
+      "answer": "Inertia mäter den totala summan av kvadrerade avstånd från varje datapunkt till sin tilldelade centroid, och används för att utvärdera hur väl klustren fångar datan."
+    },
+    {
+      "question": "Hur optimeras centroidpunkterna i K-means under träningen?",
+      "answer": "Efter varje iteration beräknas centroidpunkten som medelvärdet av alla datapunkter som tillhör klustret, och centroids flyttas mot dessa nya medelvärden tills konvergens uppnås."
+    },
+    {
+      "question": "Stämmer det att PCA och UMAP inte klustrar data utan endast visualiserar mönster?",
+      "answer": "Ja, PCA och UMAP reducerar dimensioner och visar strukturer och mönster, men de klustrar inte datapunkter. Klustring sker med algoritmer som K-means."
+    },
+    {
+      "question": "Vad är Silhouette Score baserat på och vad mäter det?",
+      "answer": "Silhouette Score baseras på två mått: a (sammanhållning inom samma kluster) och b (separation till närmsta kluster). Det mäter hur väl varje datapunkt är placerad i sitt kluster jämfört med andra kluster."
+    },
+    {
+      "question": "Vad innebär konvergens inom klustringsalgoritmer som K-means?",
+      "answer": "Konvergens innebär att klustercentroiderna och datapunkternas tilldelningar inte längre förändras mellan iterationer, vilket signalerar att modellen har stabiliserats."
+    },
+    {
+      "question": "Vilka olika linkage-metoder används inom hierarkisk klustring och vad innebär de?",
+      "answer": "Single linkage mäter närmaste avstånd mellan två kluster, complete linkage mäter största avståndet, average linkage använder genomsnittligt avstånd, Ward's metod minimerar varians inom kluster, medan centroid och median linkage baseras på medelpunkt respektive median."
+    },
+    {
+      "question": "Hur fungerar Isolation Forest för anomalidetektion?",
+      "answer": "Isolation Forest isolerar datapunkter genom att bygga slumpmässiga träd; datapunkter som isoleras snabbt (med få splittar) betraktas som anomalier."
+    },
+    {
+      "question": "Vilka alternativ finns till Isolation Forest för anomalidetektion?",
+      "answer": "Alternativen inkluderar One-Class SVM (gränsdragning runt normal data), Local Outlier Factor (mäter lokal densitet) och Autoencoders (neuronala nätverk som identifierar avvikelser via rekonstruktionsfel)."
+    },
+    {
+      "question": "När och hur väljer man rätt metod för Unsupervised Learning?",
+      "answer": "Valet baseras på datatyp (kategorisk/numerisk), målet (klustring, anomalidetektion, datareduktion), datasetets storlek (skalbarhet) och tålighet mot brus och outliers. PCA och UMAP används för dimensionsreduktion, K-means och Hierarkisk klustring för klustring, Isolation Forest för anomalidetektion."
+    }
+  ]
+  
