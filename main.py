@@ -30,10 +30,10 @@ try:
             print("Error: Unexpected JSON format. Expected a list of objects with 'question' and 'answer' keys.")
             questions = []
 except FileNotFoundError:
-    print(f"Error: File {path} not found.")
+    print(f"Error: File {file_path} not found.")
     questions = []
 except json.JSONDecodeError:
-    print(f"Error: Failed to decode JSON from {path}.")
+    print(f"Error: Failed to decode JSON from {file_path}.")
     questions = []
 
 choice = 0
