@@ -1,11 +1,28 @@
 import json
 from random import randint, shuffle
 from datetime import datetime
+import os
 
-path = "./questions_eda.json"
+
+
+print("Hello there! Please select a file to use in the study quiz!")
+
+folder_path = "./"
+
+json_files = [file for file in os.listdir(folder_path) if file.endswith('.json')]
+
+for idx, filename in enumerate(json_files, start=1):
+    print(f"{idx}. {filename}")
+
+choice = int(input("Select a file number: "))
+selected_file = json_files[choice - 1]
+
+print(f"You selected: {selected_file}")
+
+file_path = f"{folder_path}/{selected_file}"
 
 try:
-    with open(path, "r", encoding="utf-8") as file:
+    with open(file_path, "r", encoding="utf-8") as file:
         data = json.load(file)
         if isinstance(data, list) and all("question" in item and "answer" in item for item in data):
             questions = data
@@ -25,6 +42,7 @@ asked = 0
 practice_more = []
 user_answers = []
 results = "0/0"
+
 
 while choice != "2":
     choice = input("1) Ask a question\n2) Quit\n")
