@@ -118,5 +118,21 @@
   {
     "question": "Scenario: Du optimerar en modell för att minimera falska negativa. Vad gör du?",
     "answer": "Jag sänker tröskelvärdet för klassificering för att öka sannolikheten att upptäcka alla positiva fall, även på bekostnad av fler falska positiva."
+  },
+  {
+    "question": "Vad är och hur beräknas accuracy i en klassificeringsmodell?",
+    "answer": "Accuracy beräknas som (TP + TN) / (TP + TN + FP + FN), vilket visar andelen korrekta förutsägelser av alla förutsägelser."
+  },
+  {
+    "question": "Vad är och hur beräknas precision?",
+    "answer": "Precision är TP / (TP + FP), vilket innebär andelen korrekta positiva förutsägelser av alla förutsagda positiva fall."
+  },
+  {
+    "question": "Vad är och hur beräknas recall eller sensitivity?",
+    "answer": "Recall är TP / (TP + FN), vilket innebär andelen korrekta positiva förutsägelser av alla faktiska positiva fall."
+  },
+  {
+    "question": "Vad är F1-score och hur beräknas det?",
+    "answer": "F1-score är det harmoniska medelvärdet av precision och recall och straffar extremvärden mer än ett aritmetiskt medelvärde."
   }
 ]
