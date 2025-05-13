@@ -1,0 +1,122 @@
+[
+  {
+    "question": "Vad är skillnaden mellan linjär och logistisk regression?",
+    "answer": "Linjär regression används för att förutsäga kontinuerliga värden, medan logistisk regression används för att förutsäga sannolikheten för ett binärt utfall."
+  },
+  {
+    "question": "Vad betyder logit(P) i logistisk regression?",
+    "answer": "Logit(P) representerar log-odds, vilket är logaritmen av sannolikheten att ett utfall inträffar delat med sannolikheten att det inte inträffar."
+  },
+  {
+    "question": "Varför delar man upp data i tränings- och testdata?",
+    "answer": "För att kunna utvärdera modellens generaliseringsförmåga och undvika överanpassning genom att testa på osedda data."
+  },
+  {
+    "question": "Vad innebär random_state i uppdelning av data?",
+    "answer": "Det säkerställer att uppdelningen av data blir reproducerbar, vilket gör att samma resultat fås varje gång koden körs."
+  },
+  {
+    "question": "Varför bör man inte använda fit_transform på testdata?",
+    "answer": "För att undvika dataläckage. Statistik för skalning bör bara beräknas på träningsdata och sedan appliceras på testdata."
+  },
+  {
+    "question": "Vad representerar confusion matrix?",
+    "answer": "Det är en tabell som visar antalet sanna positiva, falska positiva, sanna negativa och falska negativa förutsägelser i en klassificeringsmodell."
+  },
+  {
+    "question": "Vad är ROC-kurva och AUC?",
+    "answer": "ROC-kurvan visar sambandet mellan TPR och FPR vid olika tröskelvärden. AUC representerar modellens förmåga att skilja mellan klasser och värdet ligger mellan 0.5 (slumpmässig) och 1.0 (perfekt)."
+  },
+  {
+    "question": "Vad är överlevnadsanalys (survival analysis)?",
+    "answer": "En metod för att analysera tiden tills en specifik händelse inträffar, exempelvis död eller att en maskin går sönder."
+  },
+  {
+    "question": "Vad är högercensurering?",
+    "answer": "När en individ inte upplevt händelsen innan observationstiden är slut, och vi därför inte vet exakt när eller om händelsen inträffar."
+  },
+  {
+    "question": "Vad är en Kaplan-Meier-estimator?",
+    "answer": "En icke-parametrisk metod för att uppskatta överlevnadsfunktionen baserat på tidsdata och censurerade observationer."
+  },
+  {
+    "question": "Vad är syftet med ett log-rank test?",
+    "answer": "Att jämföra överlevnadskurvor mellan två eller fler grupper för att se om det finns en statistiskt signifikant skillnad."
+  },
+  {
+    "question": "Vad är en hazardfunktion?",
+    "answer": "En funktion som beskriver risken för att händelsen inträffar vid en viss tidpunkt, givet att individen har överlevt fram till dess."
+  },
+  {
+    "question": "Vad innebär proportionalitetsantagandet i Cox-regression?",
+    "answer": "Att hazardkvoten mellan olika grupper är konstant över tid."
+  },
+  {
+    "question": "Vad representerar hazardkvoten i Cox-modellen?",
+    "answer": "Den visar hur risken för att händelsen inträffar förändras med en förklarande variabel, där ett värde >1 innebär ökad risk och <1 minskad risk."
+  },
+  {
+    "question": "Vad är ett konkordansindex (C-index)?",
+    "answer": "Ett mått på modellens förmåga att korrekt rangordna observationer efter risk, där 1.0 är perfekt och 0.5 motsvarar slump."
+  },
+  {
+    "question": "Hur påverkar multikollinjäritet en logistisk regressionsmodell?",
+    "answer": "Multikollinjäritet kan leda till instabila koefficienter, vilket gör det svårt att tolka modellens resultat och påverkar modellens tillförlitlighet."
+  },
+  {
+    "question": "Varför är det viktigt att spara skalaren (scaler) som använts vid träning av modellen?",
+    "answer": "För att säkerställa att nya data skalas på exakt samma sätt som träningsdata, vilket krävs för att modellen ska ge korrekta förutsägelser."
+  },
+  {
+    "question": "Vad innebär det om en variabel har ett högt p-värde i en logistisk regression?",
+    "answer": "Det betyder att variabeln inte är statistiskt signifikant och sannolikt inte bidrar mycket till att förklara den beroende variabeln."
+  },
+  {
+    "question": "Vad är syftet med att optimera tröskelvärdet i en klassificeringsmodell?",
+    "answer": "För att hitta en bättre balans mellan precision och recall beroende på vad som är viktigast i tillämpningen, till exempel att minska falska positiva eller falska negativa."
+  },
+  {
+    "question": "Vad betyder en AUC på 0.5?",
+    "answer": "Att modellen inte är bättre än en slumpmässig gissning och saknar diskriminerande förmåga mellan klasserna."
+  },
+  {
+    "question": "Hur hanteras censurerade data i Kaplan-Meier-analys?",
+    "answer": "De inkluderas i beräkningarna fram till den tidpunkt de censureras, vilket gör att all tillgänglig information används utan att snedvrida resultatet."
+  },
+  {
+    "question": "Hur fungerar Cox-modellen utan att kräva en specifik överlevnadsfördelning?",
+    "answer": "Den är semi-parametrisk och modellerar hazardkvoter utan att göra antaganden om baslinjeöverlevnadskurvans form."
+  },
+  {
+    "question": "Vad är en pseudo R-squared i logistisk regression?",
+    "answer": "Ett mått som liknar R-squared i linjär regression och indikerar hur mycket variation som förklaras av modellen."
+  },
+  {
+    "question": "Scenario: Du analyserar en maskins livslängd och flera maskiner fungerar fortfarande efter testperioden. Vad gör du?",
+    "answer": "Jag hanterar dessa som högercensurerade observationer i en survival analysis för att inkludera dem korrekt i analysen."
+  },
+  {
+    "question": "Scenario: Du får ett p-värde på 0.87 för en variabel i en logistisk regressionsmodell. Vad gör du?",
+    "answer": "Jag överväger att ta bort variabeln eftersom den sannolikt inte bidrar signifikant till modellen, men utvärderar först om det påverkar prestandan."
+  },
+  {
+    "question": "Scenario: Din modell visar hög precision men låg recall. Hur tolkar du det?",
+    "answer": "Modellen är bra på att förutsäga positiva utfall när den väl gör det, men missar många faktiska positiva fall."
+  },
+  {
+    "question": "Scenario: En patient studeras i fem år men dör efter sex. Hur registreras detta i en Kaplan-Meier-analys?",
+    "answer": "Patienten betraktas som högercensurerad vid fem år eftersom händelsen inte inträffade under observationsperioden."
+  },
+  {
+    "question": "Scenario: Du analyserar kundbortfall med en Cox-modell. Vilken information vill du inkludera?",
+    "answer": "Jag vill inkludera tid till avhopp, en indikator på om kunden lämnat, och andra faktorer som ålder, kön eller användningsmönster."
+  },
+  {
+    "question": "Scenario: Din Cox-modell visar att HR=0.5 för en behandling. Hur tolkar du det?",
+    "answer": "Behandlingen halverar risken för att händelsen (t.ex. död) inträffar jämfört med kontrollgruppen."
+  },
+  {
+    "question": "Scenario: Du optimerar en modell för att minimera falska negativa. Vad gör du?",
+    "answer": "Jag sänker tröskelvärdet för klassificering för att öka sannolikheten att upptäcka alla positiva fall, även på bekostnad av fler falska positiva."
+  }
+]
