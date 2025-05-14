@@ -1,0 +1,430 @@
+[
+    {
+        "question": "Är one-hot encoding en form av datareduktion inom EDA?",
+        "answer": "Nej, one-hot encoding är inte datareduktion – det ökar ofta datadimensionen genom att skapa fler kolumner från kategoriska variabler."
+    },
+    {
+        "question": "Vad innebär dummy coding i samband med one-hot encoding?",
+        "answer": "Dummy coding innebär att man tar bort en kolumn från en one-hot-kodad variabel för att undvika multikollinearitet."
+    },
+    {
+        "question": "Är normalfördelning alltid symmetrisk kring medelvärdet?",
+        "answer": "Ja, normalfördelningen är alltid symmetrisk kring sitt medelvärde."
+    },
+    {
+        "question": "Vad är skillnaden mellan varians och standardavvikelse?",
+        "answer": "Varians mäter genomsnittlig kvadrerad avvikelse från medelvärdet, medan standardavvikelse är kvadratroten av variansen och har samma enhet som datan."
+    },
+    {
+        "question": "Vad är skillnaden mellan regression och korrelation?",
+        "answer": "Korrelation mäter styrka och riktning av ett samband utan orsak-verkan, medan regression modellerar ett orsakssamband och används för prediktion."
+    },
+    {
+        "question": "Vad är syftet med ett t-test?",
+        "answer": "Ett t-test används för att jämföra medelvärden och avgöra om skillnader mellan grupper är statistiskt signifikanta."
+    },
+    {
+        "question": "Vilken typ av t-test används när samma grupp testas före och efter en behandling?",
+        "answer": "Parat t-test (paired samples t-test)."
+    },
+    {
+        "question": "Varför kan one-hot encoding leda till problem i linjära modeller om man inte använder dummy coding?",
+        "answer": "Eftersom alla one-hot-kodade kolumner tillsammans blir linjärt beroende, vilket skapar multikollinearitet och gör att modellen inte kan uppskatta koefficienterna korrekt."
+    },
+    {
+        "question": "Varför föredras standardavvikelse framför varians när man tolkar spridning i praktiken?",
+        "answer": "För att standardavvikelsen har samma enhet som datan och är därmed lättare att tolka direkt i sammanhanget."
+    },
+    {
+        "question": "En fördelning har ett medelvärde på 50 men en tydlig svans åt höger. Är detta en normalfördelning? Motivera kort.",
+        "answer": "Nej, eftersom en normalfördelning är symmetrisk. En svans åt höger tyder på högerskev fördelning."
+    },
+    {
+        "question": "Om korrelationen mellan två variabler är stark, innebär det att den ena orsakar den andra? Förklara kort.",
+        "answer": "Nej, korrelation visar bara att de samvarierar – det innebär inte orsak-verkan eftersom det kan finnas en bakomliggande variabel eller vara en slump."
+    },
+    {
+        "question": "När är det mer lämpligt att använda regression istället för bara korrelation?",
+        "answer": "När man vill förutsäga ett värde eller undersöka hur en oberoende variabel påverkar en beroende – inte bara om de samvarierar utan hur de gör det."
+    },
+    {
+        "question": "Vad är syftet med Exploratory Data Analysis (EDA)?",
+        "answer": "Att få en första förståelse för datan, upptäcka mönster, uteliggare och relationer innan vidare analys."
+    },
+    {
+        "question": "Vad är UMAP och när används det?",
+        "answer": "UMAP är en dimensionreduktionsmetod som bevarar lokala strukturer – ofta använd för visualisering av högdimensionell data."
+    },
+    {
+        "question": "Vad är skillnaden mellan parametrisk och icke-parametrisk statistik?",
+        "answer": "Parametrisk statistik bygger på antaganden om fördelningar (t.ex. normalfördelning), medan icke-parametrisk inte kräver sådana antaganden."
+    },
+    {
+        "question": "Vilka huvudtyper av data finns det?",
+        "answer": "Kategorisk (nominell, ordinal), numerisk (diskret, kontinuerlig), och ibland text eller tidsseriedata."
+    },
+    {
+        "question": "Hur bör man tänka när man väljer vilket diagram som ska användas?",
+        "answer": "Tänk på datatyp, syftet med analysen och vad du vill kommunicera – t.ex. histogram för fördelningar, scatterplot för samband."
+    },
+    {
+        "question": "Vad är skillnaden mellan normalisering och standardisering?",
+        "answer": "Normalisering skalar värden till [0,1] medan standardisering justerar värden till medel 0 och standardavvikelse 1."
+    },
+    {
+        "question": "Vad används statistiska tester till?",
+        "answer": "För att avgöra om skillnader eller samband i data är statistiskt signifikanta – t.ex. t-test, chi2, ANOVA."
+    },
+    {
+        "question": "Vad är skillnaden mellan PCA och CA?",
+        "answer": "PCA används främst för numerisk data och reducerar dimensioner, medan CA används för kategorisk data i kontingenstabeller."
+    },
+    {
+        "question": "Vad innebär SVD i dataanalys?",
+        "answer": "Singular Value Decomposition delar upp en matris i tre komponenter och används i PCA, rekommendationssystem m.m."
+    },
+    {
+        "question": "Vad är skillnaden mellan varians och standardavvikelse?",
+        "answer": "Varians är medelvärdet av kvadrerade avvikelser, medan standardavvikelse är roten ur variansen – vilket gör den mer tolkbar."
+    },
+    {
+        "question": "Vad är ett p-värde?",
+        "answer": "Det är sannolikheten att få ett resultat lika extremt som det observerade om nollhypotesen är sann."
+    },
+    {
+        "question": "Vad menas med datautvinning?",
+        "answer": "Att hitta mönster, trender och relationer i stora datamängder med hjälp av statistik, AI och maskininlärning."
+    },
+    {
+        "question": "När är det mer lämpligt att använda regression istället för bara korrelation?",
+        "answer": "När man vill förutsäga ett värde eller undersöka hur en oberoende variabel påverkar en beroende – inte bara om de samvarierar utan hur de gör det."
+    },
+    {
+        "question": "Vad innebär datarening?",
+        "answer": "Att förbereda data för analys genom att hantera saknade värden, dubbletter, felaktiga typer och outliers."
+    },
+    {
+        "question": "Du har en datamängd där vissa rader saknar värden i flera kolumner. Vad gör du?",
+        "answer": "Jag analyserar mönstret i de saknade värdena, tar bort rader med mycket saknat eller fyller i med rimliga metoder som medelvärde eller imputering."
+    },
+    {
+        "question": "Du ska visualisera sambandet mellan två numeriska variabler. Vilket diagram använder du och varför?",
+        "answer": "Ett scatterplot eftersom det visar hur två numeriska variabler samvarierar och kan avslöja linjära eller icke-linjära samband."
+    },
+    {
+        "question": "Ditt dataset har många kategoriska variabler. Du vill reducera dimensioner för att klustra data. Vad använder du?",
+        "answer": "Korrespondensanalys (CA) eftersom den är anpassad för att analysera samband mellan kategoriska variabler."
+    },
+    {
+        "question": "Du har ett dataset med 200 kolumner. Visualiseringen är svårtolkad. Vad gör du?",
+        "answer": "Jag använder PCA eller UMAP för att reducera dimensionerna och projicera datan i 2D eller 3D för att lättare upptäcka mönster."
+    },
+    {
+        "question": "Du misstänker att ett extremt värde i datan påverkar ditt resultat. Hur går du vidare?",
+        "answer": "Jag undersöker outliers med t.ex. boxplot eller z-score, och testar att köra analys både med och utan dem för att se skillnaden."
+    },
+    {
+        "question": "Du har tränat en modell men misstänker att vissa skalor påverkar resultatet. Vad kontrollerar du?",
+        "answer": "Jag kontrollerar om datan är normaliserad eller standardiserad – särskilt viktigt vid avståndsbaserade algoritmer som KNN eller PCA."
+    },
+    {
+        "question": "En kollega har gjort en analys och fått ett p-värde på 0.03. Vad betyder det?",
+        "answer": "Det betyder att det är 3 % sannolikhet att få detta resultat om nollhypotesen är sann – alltså är resultatet statistiskt signifikant på 5 %-nivån."
+    },
+    {
+        "question": "Du ser att två variabler har hög korrelation. Vad är viktigt att tänka på innan du drar slutsatser?",
+        "answer": "Att korrelation inte innebär orsakssamband – andra variabler kan påverka sambandet eller det kan vara slump."
+    },
+    {
+        "question": "Du arbetar med en kunddatabas där 'kön' anges som 'Male', 'MALE', 'male'. Vad gör du?",
+        "answer": "Jag standardiserar kategorin genom att konvertera till små bokstäver och eventuellt ersätta alla med en enhetlig etikett."
+    },
+    {
+        "question": "Du har ett stort dataset och vill hitta dolda mönster och grupper. Vad gör du först?",
+        "answer": "Jag gör EDA för att förstå datan, sedan ev. datarening, följt av klustring (t.ex. KMeans) efter ev. dimensionreduktion med PCA eller UMAP."
+    },
+    {
+        "question": "Vad är multikollinearitet och varför är det ett problem i regression?",
+        "answer": "Multikollinearitet uppstår när två eller fler oberoende variabler är starkt korrelerade, vilket gör det svårt för modellen att uppskatta koefficienterna på ett tillförlitligt sätt."
+    },
+    {
+        "question": "När används Chi2-test?",
+        "answer": "Chi2-test används för att undersöka om det finns ett samband mellan två kategoriska variabler i en kontingenstabell."
+    },
+    {
+        "question": "Vad menas med outliers och hur kan man identifiera dem?",
+        "answer": "Outliers är extremvärden som skiljer sig markant från övriga data. De kan identifieras med boxplots, z-score eller IQR-regeln."
+    },
+    {
+        "question": "Vad är ett konfidensintervall?",
+        "answer": "Ett konfidensintervall är ett intervall som med en viss sannolikhet (t.ex. 95 %) innehåller det sanna värdet för en parameter, som ett medelvärde."
+    },
+    {
+        "question": "Vad är skillnaden mellan överanpassning (overfitting) och underanpassning (underfitting)?",
+        "answer": "Överanpassning sker när en modell lär sig träningen för väl inklusive brus, medan underanpassning innebär att modellen inte fångar mönstren tillräckligt."
+    },
+    {
+        "question": "Vad är syftet med klustring i unsupervised learning?",
+        "answer": "Klustring används för att identifiera grupper eller mönster i data utan fördefinierade etiketter."
+    },
+    {
+        "question": "Vad är silhuettvärdet (silhouette score) i klustring?",
+        "answer": "Det är ett mått på hur väl varje punkt matchar sitt kluster jämfört med andra kluster – högre värde betyder bättre klustring."
+    },
+    {
+        "question": "Vad innebär imputering i datahantering?",
+        "answer": "Imputering innebär att ersätta saknade värden med uppskattade, t.ex. medelvärde, median eller med hjälp av en modell."
+    },
+    {
+        "question": "När används logistisk regression istället för linjär regression?",
+        "answer": "Logistisk regression används när den beroende variabeln är kategorisk, t.ex. för att förutsäga sannolikheter som klass 0 eller 1."
+    },
+    {
+        "question": "Vad är syftet med korsvalidering (cross-validation)?",
+        "answer": "Att utvärdera modellens prestanda på olika delar av datan för att minska risken för överanpassning och få en mer robust modell."
+    },
+    {
+        "question": "Vad är syftet med unsupervised learning?",
+        "answer": "Att identifiera mönster, strukturer eller kluster i oetiketterad data utan att ha en förutbestämd målvariabel."
+    },
+    {
+        "question": "Hur fungerar K-means clustering på en grundläggande nivå?",
+        "answer": "Algoritmen placerar ut K klustercentroid och tilldelar varje datapunkt till närmaste centroid, sedan uppdateras centroids baserat på medelvärdet av tilldelade punkter och processen upprepas tills konvergens."
+    },
+    {
+        "question": "Vad är en centroid i K-means algoritmen?",
+        "answer": "En centroid är den geometriska mittpunkten av datapunkterna som tillhör ett visst kluster."
+    },
+    {
+        "question": "Vad innebär 'konvergens' i K-means algoritmen?",
+        "answer": "Konvergens uppnås när datapunkternas klustertillhörigheter inte längre förändras mellan iterationer eller när centroidpositionerna inte uppdateras längre."
+    },
+    {
+        "question": "Vad används en distansmetrik till i klustringsalgoritmer?",
+        "answer": "En distansmetrik används för att mäta likheten mellan datapunkter, exempelvis Euclidean eller Manhattan-avstånd."
+    },
+    {
+        "question": "Vilket problem kan uppstå om man väljer ett olämpligt värde på K i K-means?",
+        "answer": "Det kan leda till dålig klustring där viktiga mönster förbises eller där data överanpassas, vilket försämrar tolkbarheten."
+    },
+    {
+        "question": "Varför är det viktigt att normalisera data innan klustring?",
+        "answer": "Eftersom vissa attribut kan dominera avståndsberäkningen om de har mycket större skala än andra, vilket kan snedvrida klustertilldelningen."
+    },
+    {
+        "question": "Vad är en möjlig metod för att bestämma optimalt antal kluster i K-means?",
+        "answer": "En vanlig metod är elbow-metoden, där man undersöker variationen inom kluster som funktion av K och letar efter en 'armbåge' i kurvan."
+    },
+    {
+        "question": "Vad är en nackdel med K-means-algoritmen vid användning på komplexa dataset?",
+        "answer": "K-means har svårt att identifiera kluster med oregelbunden form eller varierande densitet, eftersom den antar att alla kluster är sfäriska och lika stora."
+    },
+    {
+        "question": "Vad innebär det att K-means är känslig för initiala centroidplaceringar?",
+        "answer": "Olika initialiseringar kan leda till olika slutresultat, eftersom algoritmen kan fastna i lokala minima."
+    },
+    {
+        "question": "Hur kan man minska risken för dåliga resultat i K-means p.g.a. initiala centroidplaceringar?",
+        "answer": "Genom att använda metoder som K-means++ som förbättrar valet av initiala centroidpositioner."
+    },
+    {
+        "question": "Vad är syftet med hierarkisk klustring?",
+        "answer": "Att skapa en trädstruktur (dendrogram) som visar hur datapunkter kan grupperas på olika nivåer av likhet utan att i förväg välja antal kluster."
+    },
+    {
+        "question": "Vad representerar en dendrogram i hierarkisk klustring?",
+        "answer": "Ett trädliknande diagram där varje sammanslagning av kluster visas som en nod, vilket ger en visuell översikt av klustringshierarkin."
+    },
+    {
+        "question": "Vad är skillnaden mellan agglomerativ och divisiv hierarkisk klustring?",
+        "answer": "Agglomerativ börjar med varje datapunkt som eget kluster och slår samman dem, medan divisiv börjar med alla punkter i ett kluster och delar upp dem."
+    },
+    {
+        "question": "Vad är 'linkage' i hierarkisk klustring?",
+        "answer": "En metod för att mäta avståndet mellan kluster, till exempel single linkage (minimalt avstånd), complete linkage (maximalt avstånd), och average linkage (medelavstånd)."
+    },
+    {
+        "question": "Vilken fördel har hierarkisk klustring jämfört med K-means?",
+        "answer": "Hierarkisk klustring kräver inte att man på förhand bestämmer antalet kluster och kan ge mer insikt i datans struktur genom dendrogrammet."
+    },
+        {
+        "question": "Vad är skillnaden mellan linjär och logistisk regression?",
+        "answer": "Linjär regression används för att förutsäga kontinuerliga värden, medan logistisk regression används för att förutsäga sannolikheten för ett binärt utfall."
+    },
+    {
+        "question": "Vad betyder logit(P) i logistisk regression?",
+        "answer": "Logit(P) representerar log-odds, vilket är logaritmen av sannolikheten att ett utfall inträffar delat med sannolikheten att det inte inträffar."
+    },
+    {
+        "question": "Varför delar man upp data i tränings- och testdata?",
+        "answer": "För att kunna utvärdera modellens generaliseringsförmåga och undvika överanpassning genom att testa på osedda data."
+    },
+    {
+        "question": "Vad innebär random_state i uppdelning av data?",
+        "answer": "Det säkerställer att uppdelningen av data blir reproducerbar, vilket gör att samma resultat fås varje gång koden körs."
+    },
+    {
+        "question": "Varför bör man inte använda fit_transform på testdata?",
+        "answer": "För att undvika dataläckage. Statistik för skalning bör bara beräknas på träningsdata och sedan appliceras på testdata."
+    },
+    {
+        "question": "Vad representerar confusion matrix?",
+        "answer": "Det är en tabell som visar antalet sanna positiva, falska positiva, sanna negativa och falska negativa förutsägelser i en klassificeringsmodell."
+    },
+    {
+        "question": "Vad är ROC-kurva och AUC?",
+        "answer": "ROC-kurvan visar sambandet mellan TPR och FPR vid olika tröskelvärden. AUC representerar modellens förmåga att skilja mellan klasser och värdet ligger mellan 0.5 (slumpmässig) och 1.0 (perfekt)."
+    },
+    {
+        "question": "Vad är överlevnadsanalys (survival analysis)?",
+        "answer": "En metod för att analysera tiden tills en specifik händelse inträffar, exempelvis död eller att en maskin går sönder."
+    },
+    {
+        "question": "Vad är högercensurering?",
+        "answer": "När en individ inte upplevt händelsen innan observationstiden är slut, och vi därför inte vet exakt när eller om händelsen inträffar."
+    },
+    {
+        "question": "Vad är en Kaplan-Meier-estimator?",
+        "answer": "En icke-parametrisk metod för att uppskatta överlevnadsfunktionen baserat på tidsdata och censurerade observationer."
+    },
+    {
+        "question": "Vad är syftet med ett log-rank test?",
+        "answer": "Att jämföra överlevnadskurvor mellan två eller fler grupper för att se om det finns en statistiskt signifikant skillnad."
+    },
+    {
+        "question": "Vad är en hazardfunktion?",
+        "answer": "En funktion som beskriver risken för att händelsen inträffar vid en viss tidpunkt, givet att individen har överlevt fram till dess."
+    },
+    {
+        "question": "Vad innebär proportionalitetsantagandet i Cox-regression?",
+        "answer": "Att hazardkvoten mellan olika grupper är konstant över tid."
+    },
+    {
+        "question": "Vad representerar hazardkvoten i Cox-modellen?",
+        "answer": "Den visar hur risken för att händelsen inträffar förändras med en förklarande variabel, där ett värde >1 innebär ökad risk och <1 minskad risk."
+    },
+    {
+        "question": "Vad är ett konkordansindex (C-index)?",
+        "answer": "Ett mått på modellens förmåga att korrekt rangordna observationer efter risk, där 1.0 är perfekt och 0.5 motsvarar slump."
+    },
+    {
+        "question": "Hur påverkar multikollinjäritet en logistisk regressionsmodell?",
+        "answer": "Multikollinjäritet kan leda till instabila koefficienter, vilket gör det svårt att tolka modellens resultat och påverkar modellens tillförlitlighet."
+    },
+    {
+        "question": "Varför är det viktigt att spara skalaren (scaler) som använts vid träning av modellen?",
+        "answer": "För att säkerställa att nya data skalas på exakt samma sätt som träningsdata, vilket krävs för att modellen ska ge korrekta förutsägelser."
+    },
+    {
+        "question": "Vad innebär det om en variabel har ett högt p-värde i en logistisk regression?",
+        "answer": "Det betyder att variabeln inte är statistiskt signifikant och sannolikt inte bidrar mycket till att förklara den beroende variabeln."
+    },
+    {
+        "question": "Vad är syftet med att optimera tröskelvärdet i en klassificeringsmodell?",
+        "answer": "För att hitta en bättre balans mellan precision och recall beroende på vad som är viktigast i tillämpningen, till exempel att minska falska positiva eller falska negativa."
+    },
+    {
+        "question": "Vad betyder en AUC på 0.5?",
+        "answer": "Att modellen inte är bättre än en slumpmässig gissning och saknar diskriminerande förmåga mellan klasserna."
+    },
+    {
+        "question": "Hur hanteras censurerade data i Kaplan-Meier-analys?",
+        "answer": "De inkluderas i beräkningarna fram till den tidpunkt de censureras, vilket gör att all tillgänglig information används utan att snedvrida resultatet."
+    },
+    {
+        "question": "Hur fungerar Cox-modellen utan att kräva en specifik överlevnadsfördelning?",
+        "answer": "Den är semi-parametrisk och modellerar hazardkvoter utan att göra antaganden om baslinjeöverlevnadskurvans form."
+    },
+    {
+        "question": "Vad är en pseudo R-squared i logistisk regression?",
+        "answer": "Ett mått som liknar R-squared i linjär regression och indikerar hur mycket variation som förklaras av modellen."
+    },
+    {
+        "question": "Scenario: Du analyserar en maskins livslängd och flera maskiner fungerar fortfarande efter testperioden. Vad gör du?",
+        "answer": "Jag hanterar dessa som högercensurerade observationer i en survival analysis för att inkludera dem korrekt i analysen."
+    },
+    {
+        "question": "Scenario: Du får ett p-värde på 0.87 för en variabel i en logistisk regressionsmodell. Vad gör du?",
+        "answer": "Jag överväger att ta bort variabeln eftersom den sannolikt inte bidrar signifikant till modellen, men utvärderar först om det påverkar prestandan."
+    },
+    {
+        "question": "Scenario: Din modell visar hög precision men låg recall. Hur tolkar du det?",
+        "answer": "Modellen är bra på att förutsäga positiva utfall när den väl gör det, men missar många faktiska positiva fall."
+    },
+    {
+        "question": "Scenario: En patient studeras i fem år men dör efter sex. Hur registreras detta i en Kaplan-Meier-analys?",
+        "answer": "Patienten betraktas som högercensurerad vid fem år eftersom händelsen inte inträffade under observationsperioden."
+    },
+    {
+        "question": "Scenario: Du analyserar kundbortfall med en Cox-modell. Vilken information vill du inkludera?",
+        "answer": "Jag vill inkludera tid till avhopp, en indikator på om kunden lämnat, och andra faktorer som ålder, kön eller användningsmönster."
+    },
+    {
+        "question": "Scenario: Din Cox-modell visar att HR=0.5 för en behandling. Hur tolkar du det?",
+        "answer": "Behandlingen halverar risken för att händelsen (t.ex. död) inträffar jämfört med kontrollgruppen."
+    },
+    {
+        "question": "Scenario: Du optimerar en modell för att minimera falska negativa. Vad gör du?",
+        "answer": "Jag sänker tröskelvärdet för klassificering för att öka sannolikheten att upptäcka alla positiva fall, även på bekostnad av fler falska positiva."
+    },
+    {
+        "question": "Vad är och hur beräknas accuracy i en klassificeringsmodell?",
+        "answer": "Accuracy beräknas som (TP + TN) / (TP + TN + FP + FN), vilket visar andelen korrekta förutsägelser av alla förutsägelser."
+    },
+    {
+        "question": "Vad är och hur beräknas precision?",
+        "answer": "Precision är TP / (TP + FP), vilket innebär andelen korrekta positiva förutsägelser av alla förutsagda positiva fall."
+    },
+    {
+        "question": "Vad är och hur beräknas recall eller sensitivity?",
+        "answer": "Recall är TP / (TP + FN), vilket innebär andelen korrekta positiva förutsägelser av alla faktiska positiva fall."
+    },
+    {
+        "question": "Vad är F1-score och hur beräknas det?",
+        "answer": "F1-score är det harmoniska medelvärdet av precision och recall och straffar extremvärden mer än ett aritmetiskt medelvärde."
+    },
+    {
+    "question": "Vad är skillnaden mellan agglomerativ och divisiv hierarkisk klustring?",
+    "answer": "Agglomerativ börjar med varje datapunkt som ett eget kluster och slår ihop dem successivt, medan divisiv börjar med alla datapunkter i ett enda kluster och delar upp dem steg för steg."
+    },
+    {
+    "question": "Vilka är för- och nackdelarna med hierarkisk klustring jämfört med K-means?",
+    "answer": "Fördelar: Kräver inte att antal kluster anges i förväg och ger en hierarkisk struktur via dendrogram. Nackdelar: Skalar dåligt vid stora dataset och är känslig för brus och outliers."
+    },
+    {
+    "question": "Vad är inertia i K-means och vad mäter det?",
+    "answer": "Inertia mäter den totala summan av kvadrerade avstånd från varje datapunkt till sin tilldelade centroid, och används för att utvärdera hur väl klustren fångar datan."
+    },
+    {
+    "question": "Hur optimeras centroidpunkterna i K-means under träningen?",
+    "answer": "Efter varje iteration beräknas centroidpunkten som medelvärdet av alla datapunkter som tillhör klustret, och centroids flyttas mot dessa nya medelvärden tills konvergens uppnås."
+    },
+    {
+    "question": "Stämmer det att PCA och UMAP inte klustrar data utan endast visualiserar mönster?",
+    "answer": "Ja, PCA och UMAP reducerar dimensioner och visar strukturer och mönster, men de klustrar inte datapunkter. Klustring sker med algoritmer som K-means."
+    },
+    {
+    "question": "Vad är Silhouette Score baserat på och vad mäter det?",
+    "answer": "Silhouette Score baseras på två mått: a (sammanhållning inom samma kluster) och b (separation till närmsta kluster). Det mäter hur väl varje datapunkt är placerad i sitt kluster jämfört med andra kluster."
+    },
+    {
+    "question": "Vad innebär konvergens inom klustringsalgoritmer som K-means?",
+    "answer": "Konvergens innebär att klustercentroiderna och datapunkternas tilldelningar inte längre förändras mellan iterationer, vilket signalerar att modellen har stabiliserats."
+    },
+    {
+    "question": "Vilka olika linkage-metoder används inom hierarkisk klustring och vad innebär de?",
+    "answer": "Single linkage mäter närmaste avstånd mellan två kluster, complete linkage mäter största avståndet, average linkage använder genomsnittligt avstånd, Ward's metod minimerar varians inom kluster, medan centroid och median linkage baseras på medelpunkt respektive median."
+    },
+    {
+    "question": "Hur fungerar Isolation Forest för anomalidetektion?",
+    "answer": "Isolation Forest isolerar datapunkter genom att bygga slumpmässiga träd; datapunkter som isoleras snabbt (med få splittar) betraktas som anomalier."
+    },
+    {
+    "question": "Vilka alternativ finns till Isolation Forest för anomalidetektion?",
+    "answer": "Alternativen inkluderar One-Class SVM (gränsdragning runt normal data), Local Outlier Factor (mäter lokal densitet) och Autoencoders (neuronala nätverk som identifierar avvikelser via rekonstruktionsfel)."
+    },
+    {
+    "question": "När och hur väljer man rätt metod för Unsupervised Learning?",
+    "answer": "Valet baseras på datatyp (kategorisk/numerisk), målet (klustring, anomalidetektion, datareduktion), datasetets storlek (skalbarhet) och tålighet mot brus och outliers. PCA och UMAP används för dimensionsreduktion, K-means och Hierarkisk klustring för klustring, Isolation Forest för anomalidetektion."
+    },
+]
